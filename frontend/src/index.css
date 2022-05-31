@@ -2,10 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.title {
+  font-size: 70px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+.title::before {
+  content: 'CHATZ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  width: 50%;
+  overflow-x: hidden;
 }
